@@ -10,11 +10,11 @@ const Counter = () => {
       <div>
         <button
           data-testid="minus-button"
-          onClick={() => setCountX(countx - 1)}
+          onClick={() => setCountX(countx - 5)}
         >
           -
         </button>
-        <button data-testid="plus-button" onClick={() => setCountX(countx + 1)}>
+        <button data-testid="plus-button" onClick={() => setCountX(countx + 5)}>
           +
         </button>
       </div>

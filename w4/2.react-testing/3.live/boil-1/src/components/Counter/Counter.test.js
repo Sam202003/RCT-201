@@ -32,6 +32,16 @@ it("should increment count value when clicked on increment", () => {
 
 })
 
+it("should increament the value by 5", () => {
+    render(<Counter />)
+    let incButton = screen.getByTestId('plus-button')
+    fireEvent.click(incButton);
+})
+it("should decreament the value by 5", () => {
+    render(<Counter />)
+    let decButton = screen.getByTestId('minus-button')
+    fireEvent.click(decButton);
+})
 
 afterAll(() => {
     cleanup()
